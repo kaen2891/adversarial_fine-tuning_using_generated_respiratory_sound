@@ -11,20 +11,6 @@ To train or evalutate the respiratory sound classification task, please see ```C
 <section>
 
 <p>
-  <span style="display:inline-block; width:600px; text-align:center">(Test Real) 147_2b4_Pl_mc_AKGC417L_event_2_label_0.wav</span>
-  <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 147_2b4_Pl_mc_AKGC417L_event_2_label_0.wav</span>
-</p>
-
-<audio controls>
-  <source src="Diffwave/samples/test_set_samples/147_2b4_Pl_mc_AKGC417L_event_2_label_0.wav" type="audio/wav">
-</audio>
-<img src="Diffwave/samples/test_set_samples/real_147_2b2_Pl_mc_AKGC417L_event_2_label_0.png" width="300"></img>
-<audio controls>
-  <source src="Diffwave/samples/generated_test_samples/147_2b4_Pl_mc_AKGC417L_event_2_label_0.wav" type="audio/wav">
-</audio>
-<img src="Diffwave/samples/generated_test_samples/icbhi_generated_147_2b2_Pl_mc_AKGC417L_event_2_label_0.png" width="300"></img>
-
-<p>
   <span style="display:inline-block; width:600px; text-align:center">(Test Real) 170_1b2_Tc_mc_AKGC417L_event_3_label_0.wav</span>
   <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 170_1b2_Tc_mc_AKGC417L_event_3_label_0.wav</span>
 </p>
