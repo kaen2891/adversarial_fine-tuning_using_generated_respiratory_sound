@@ -1,0 +1,14 @@
+pandas
+nlpaug
+audiomentations
+timm==0.4.5
+wget
+seaborn
+tqdm
+librosa
+numpy
+tensorboard
+matplotlib
+soundfile
+scikit-learn
+scipy

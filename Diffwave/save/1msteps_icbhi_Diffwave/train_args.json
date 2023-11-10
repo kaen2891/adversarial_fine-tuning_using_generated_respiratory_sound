@@ -1,0 +1,28 @@
+{
+    "seed": 1,
+    "save_dir": "./save",
+    "resume": null,
+    "dataset": "icbhi",
+    "tag": "gpu2",
+    "data_dirs": [
+        "./dataset"
+    ],
+    "max_steps": null,
+    "uncondition": false,
+    "class_condition": false,
+    "max_step": 50,
+    "fp16": false,
+    "label": 0,
+    "batch_size": 16,
+    "learning_rate": 0.0002,
+    "max_grad_norm": false,
+    "sample_rate": 16000,
+    "desired_length": 4,
+    "n_mels": 80,
+    "n_fft": 1024,
+    "hop_samples": 256,
+    "crop_mel_frames": 62,
+    "num_workers": 16,
+    "model_name": "condition_icbhi_bs_16_sr_16000_len_4_label_0_seed_1_cc_False_step_50_tag_gpu2",
+    "save_folder": "./save/condition_icbhi_bs_16_sr_16000_len_4_label_0_seed_1_cc_False_step_50_tag_gpu2"
+}

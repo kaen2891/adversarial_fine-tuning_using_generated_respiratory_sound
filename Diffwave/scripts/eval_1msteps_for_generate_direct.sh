@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python inference.py --fast ./save/1msteps_icbhi_Diffwave -s ./samples/test_set_samples -o ./samples/generated_test_samples

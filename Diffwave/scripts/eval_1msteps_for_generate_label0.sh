@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python inference.py --fast ./save/1msteps_icbhi_Diffwave -s ./dataset/wav_4secs_16000/label0/train -o ./samples/generated_train_samples_label0 --iter_for_generate 2000
