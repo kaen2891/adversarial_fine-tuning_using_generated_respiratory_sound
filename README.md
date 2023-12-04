@@ -19,11 +19,12 @@ To train or evalutate the respiratory sound classification task, please see ```C
 <audio controls>
   <source src="Diffwave/samples/test_set_samples/170_1b2_Tc_mc_AKGC417L_event_3_label_0.wav" type="audio/wav">
 </audio>
-<img src="Diffwave/samples/test_set_samples/real_170_1b2_Tc_mc_AKGC417L_event_3_label_0.png" width="300"></img>
+<img src="Diffwave/samples/test_set_samples/real_170_1b2_Tc_mc_AKGC417L_event_3_label_0.png" width="300">
+<br>
 <audio controls>
   <source src="Diffwave/samples/generated_test_samples/170_1b2_Tc_mc_AKGC417L_event_3_label_0.wav" type="audio/wav">
 </audio>
-<img src="Diffwave/samples/generated_test_samples/icbhi_generated_170_1b2_Tc_mc_AKGC417L_event_3_label_0.png" width="300"></img>
+<img src="Diffwave/samples/generated_test_samples/icbhi_generated_170_1b2_Tc_mc_AKGC417L_event_3_label_0.png" width="300">
 
 <p>
   <span style="display:inline-block; width:600px; text-align:center">(Test Real) 187_1b1_Ll_sc_Meditron_event_13_label_0.wav</span>
