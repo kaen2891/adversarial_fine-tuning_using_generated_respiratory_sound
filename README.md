@@ -12,6 +12,7 @@ To train or evalutate the respiratory sound classification task, please see ```C
 
 <p>
   <span style="display:inline-block; width:600px; text-align:center">(Test Real) 170_1b2_Tc_mc_AKGC417L_event_3_label_0.wav</span>
+  <br>
   <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 170_1b2_Tc_mc_AKGC417L_event_3_label_0.wav</span>
 </p>
 
@@ -209,7 +210,7 @@ wget https://bhichallenge.med.auth.gr/sites/default/files/ICBHI_final_database/I
 or 
 wget --no-check-certificate  https://bhichallenge.med.auth.gr/sites/default/files/ICBHI_final_database/ICBHI_final_database.zip
 ```
-To directly use our pre-processed ICBHI dataset for reproducibility, see in ```Diffwave/``` and ```Classification/``` folder
+To directly use our pre-processed ICBHI dataset for reproducibility, see in ```Diffwave/``` and ```Classification/``` folder.
 
 ## ICBHI Data
 
