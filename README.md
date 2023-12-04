@@ -12,8 +12,6 @@ To train or evalutate the respiratory sound classification task, please see ```C
 
 <p>
   <span style="display:inline-block; width:600px; text-align:center">(Test Real) 170_1b2_Tc_mc_AKGC417L_event_3_label_0.wav</span>
-  <br>
-  <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 170_1b2_Tc_mc_AKGC417L_event_3_label_0.wav</span>
 </p>
 
 <audio controls>
@@ -21,13 +19,19 @@ To train or evalutate the respiratory sound classification task, please see ```C
 </audio>
 <img src="Diffwave/samples/test_set_samples/real_170_1b2_Tc_mc_AKGC417L_event_3_label_0.png" width="300">
 <br>
+
+<p>
+  <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 170_1b2_Tc_mc_AKGC417L_event_3_label_0.wav</span>
+</p>
 <audio controls>
   <source src="Diffwave/samples/generated_test_samples/170_1b2_Tc_mc_AKGC417L_event_3_label_0.wav" type="audio/wav">
 </audio>
 <img src="Diffwave/samples/generated_test_samples/icbhi_generated_170_1b2_Tc_mc_AKGC417L_event_3_label_0.png" width="300">
+<br>
 
 <p>
   <span style="display:inline-block; width:600px; text-align:center">(Test Real) 187_1b1_Ll_sc_Meditron_event_13_label_0.wav</span>
+  <br>
   <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 187_1b1_Ll_sc_Meditron_event_13_label_0.wav</span>
 </p>
 
@@ -47,6 +51,7 @@ To train or evalutate the respiratory sound classification task, please see ```C
 
 <p>
   <span style="display:inline-block; width:600px; text-align:center">(Test Real) 176_2b3_Ar_mc_AKGC417L_event_2_label_1.wav</span>
+  <br>
   <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 176_2b3_Ar_mc_AKGC417L_event_2_label_1.wav</span>
 </p>
 
@@ -61,6 +66,7 @@ To train or evalutate the respiratory sound classification task, please see ```C
 
 <p>
   <span style="display:inline-block; width:600px; text-align:center">(Test Real) 178_1b2_Lr_mc_AKGC417L_event_11_label_1.wav</span>
+  <br>
   <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 178_1b2_Lr_mc_AKGC417L_event_11_label_1.wav</span>
 </p>
 
@@ -75,6 +81,7 @@ To train or evalutate the respiratory sound classification task, please see ```C
 
 <p>
   <span style="display:inline-block; width:600px; text-align:center">(Test Real) 216_1b1_Al_sc_Meditron_event_2_label_1.wav</span>
+  <br>
   <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 216_1b1_Al_sc_Meditron_event_2_label_1.wav</span>
 </p>
 
@@ -94,6 +101,7 @@ To train or evalutate the respiratory sound classification task, please see ```C
 
 <p>
   <span style="display:inline-block; width:600px; text-align:center">(Test Real) 147_2b2_Pl_mc_AKGC417L_event_2_label_2.wav</span>
+  <br>
   <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 147_2b2_Pl_mc_AKGC417L_event_2_label_2.wav</span>
 </p>
 
@@ -108,6 +116,7 @@ To train or evalutate the respiratory sound classification task, please see ```C
 
 <p>
   <span style="display:inline-block; width:600px; text-align:center">(Test Real) 218_1b1_Pr_sc_Meditron_event_2_label_2.wav</span>
+  <br>
   <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 218_1b1_Pr_sc_Meditron_event_2_label_2.wav</span>
 </p>
 
@@ -122,6 +131,7 @@ To train or evalutate the respiratory sound classification task, please see ```C
 
 <p>
   <span style="display:inline-block; width:600px; text-align:center">(Test Real) 223_1b1_Pr_sc_Meditron_event_7_label_2.wav</span>
+  <br>
   <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 223_1b1_Pr_sc_Meditron_event_7_label_2.wav</span>
 </p>
 
@@ -141,6 +151,7 @@ To train or evalutate the respiratory sound classification task, please see ```C
 
 <p>
   <span style="display:inline-block; width:600px; text-align:center">(Test Real) 151_2p3_Al_mc_AKGC417L_event_2_label_3.wav</span>
+  <br>
   <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 151_2p3_Al_mc_AKGC417L_event_2_label_3.wav</span>
 </p>
 
@@ -155,6 +166,7 @@ To train or evalutate the respiratory sound classification task, please see ```C
 
 <p>
   <span style="display:inline-block; width:600px; text-align:center">(Test Real) 195_1b1_Ll_sc_Litt3200_event_3_label_3.wav</span>
+  <br>
   <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 195_1b1_Ll_sc_Litt3200_event_3_label_3.wav</span>
 </p>
 
@@ -169,6 +181,7 @@ To train or evalutate the respiratory sound classification task, please see ```C
 
 <p>
   <span style="display:inline-block; width:600px; text-align:center">(Test Real) 218_1p1_Pl_sc_Litt3200_event_6_label_3.wav</span>
+  <br>
   <span style="display:inline-block; width:600px; text-align:center">(ICBHI Audio Diffusion) 218_1p1_Pl_sc_Litt3200_event_6_label_3.wav</span>
 </p>
 
