@@ -14,8 +14,9 @@ Training Respiratory Sound Classification Model with Adversarial FT
 We set the dataloader as event-level loader. (i.e., each waveform sample has various events).
 Here, following link includes original ICBHI dataset, Mixed-500, Mixed-2k:
 
+https://drive.google.com/file/d/1osi_tUl8-TDz_-c-ToWGUuUpWFoHVFvh/view?usp=sharing
 
-However, you can move data via download from [ICBHI dataset](https://paperswithcode.com/dataset/icbhi-respiratory-sound-database), and generated from our pretrained Diffwave.
+However, you can move directly [ICBHI dataset](https://paperswithcode.com/dataset/icbhi-respiratory-sound-database) and the generated samples from our pretrained Diffwave into `./data/`.
 
 unzip the ```icbhi_dataset.zip``` into `./data/`.
 
@@ -32,24 +33,24 @@ data/training
 │    └── 226_1b1_Pl_sc_LittC2SE_event_9_label_1.wav
 │
 ├── generated_from_1msteps
-│   ├── mixed500
+│    ├── mixed500
 │    |   ├── class0
-│    |    |    └── (500 samples of class0)
+│    |   |    └── (500 samples of class0)
 │    |   ├── class1
-│    |    |    └── (500 samples of class1)
+│    |   |    └── (500 samples of class1)
 │    |   ├── class2
-│    |    |    └── (500 samples of class2)
+│    |   |    └── (500 samples of class2)
 │    |   ├── class3
-│    |    |    └── (500 samples of class3)
-│   ├── mixed2k
+│    |   |    └── (500 samples of class3)
+│    ├── mixed2k
 │    |   ├── class0
-│    |    |    └── (2,000 samples of class0)
+│    |   |    └── (2,000 samples of class0)
 │    |   ├── class1
-│    |    |    └── (2,000 samples of class1)
+│    |   |    └── (2,000 samples of class1)
 │    |   ├── class2
-│    |    |    └── (2,000 samples of class2)
+│    |   |    └── (2,000 samples of class2)
 │    |   ├── class3
-│    |    |    └── (2,000 samples of class3)
+│    |   |    └── (2,000 samples of class3)
 </pre>
 
 <pre>
