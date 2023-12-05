@@ -4,22 +4,25 @@
 
 
 ### 1. Download ICBHI lung Sound Data
-(Note: At the end of the anonymity rules term, we will provide an organized and pre-processed dataset of our progress.)  
+1) To download the ICBHI respiratory sound dataset pre-processed as 4 seconds, use this URL:
 
-Download the ICBHI respiratory sound dataset  
-unzip the file and put it in the certain directory. 
+https://drive.google.com/file/d/1ULLuqNBacPkBQZqVYhSn5TKkPBYfEDhZ/view?usp=sharing
 
-Sound Data should be located in
+2) Unzip the file and put it in the ```/dataset/``` directory. 
+
+This dataset should be located in
 ```
 Adversarial-Adaptation-Synthetic-Respiratory-Sound-Data/Diffwave/dataset/
 ```
 it might be like this.
 ```
-Adversarial-Adaptation-Synthetic-Respiratory-Sound-Data/Diffwave/dataset/[train_or_test]/[wav_files]
+Adversarial-Adaptation-Synthetic-Respiratory-Sound-Data/Diffwave/dataset/wav_4secs_16000/label*/*.wav
 ```
  
 ### Preprocess 
-Pre-process waveform to Mel-spectrogram.  
+Note that if you download our pre-processed ICBHI dataset, you can skip this procedure. If not, please follow as below:
+
+This procedure involves pre-processing waveform to Mel-spectrogram for training conditional DiffWave.  
 ```
 python preprocess.py dir [YOUR_SOUND_DATA_DIR]  
 # [YOUR_SOUND_DATA_DIR] should be mentioned above  
@@ -30,21 +33,24 @@ python preprocess.py dir [YOUR_SOUND_DATA_DIR]
 cd Diffwave
 sh ./scripts/train_1msteps_icbhi.sh
 ```
+Note that the ```train_1msteps_icbhi.sh``` file is set up for DDP training. 
+If you want to train with a single GPU, please change ```CUDA_VISIBLE_DEVICES=0```
+
 
 ### Model
-(Note: Due to anonymity rules, we cannot provide the 1M step model at this time.
-But we will provide it when the term is over.)  
+The pretrained weights used in our paper can be downloaded as below:
 
-Model should be located in
+https://drive.google.com/file/d/1Y2xxZTOmMHCkvEGPDyD2kBkbjQy7YWJb/view?usp=sharing
+
+For inference, this pretrained weight should be located in
 ```
 Adversarial-Adaptation-Synthetic-Respiratory-Sound-Data/Diffwave/save/1msteps_icbhi_Diffwave/
 ```
-for inference.
 
 ### Inference
 
 
-If you want to generate some of the Mel-spectrograms in the folder using command lines, do
+If you want to use a folder containing Mel-spectrograms to generate respiratory sound samples, do
 
 ```
 python inference.py [YOUR_MODEL_PATH] --spectrogram_path [Spectrograms_PATH]
@@ -61,12 +67,12 @@ sh ./scripts/eval_1msteps_for_generate_direct.sh
 
 You can obtain the generated 10 samples of the ICBHI test set (event level) in the ``` ./samples/generated_test_samples/save/1msteps_icbhi_Diffwave_seed=0/```
 
-If you want to generate 2,000 samples from label3's training data, do the following
+If you want to generate 2,000 samples from label3's test data, do
 ```
 sh ./scripts/eval_1msteps_for_generate_label3.sh
 ```
 
-If you want to generate 10,000 samples from label2's training data, you can modify the ```iter_for_generate=10000``` of the  ```./scripts/eval_1msteps_for_generate_label2.sh``` file.
+If you want to generate 10,000 samples from label2's test data, you can modify the ```iter_for_generate=10000``` of the  ```./scripts/eval_1msteps_for_generate_label2.sh``` file.
 
 In script files, you can modify the hyperparameters.
 
