@@ -9,35 +9,56 @@ Training Respiratory Sound Classification Model with Adversarial FT
 
 ## Datasets
 
-### Generated Training Samples (Shared will be the final version)
+### Generated Training Samples
 
-We set the dataloader as event-level loader
+We set the dataloader as event-level loader. (i.e., each waveform sample has various events).
+Here, following link includes original ICBHI dataset, Mixed-500, Mixed-2k:
 
-Owing to anonymity, we will provide the original ICBHI dataset, Mixed-500, Mixed-2k in the final version
 
-However, you can move data via download from ICBHI dataset, and generated from our pretrained Diffwave.
+However, you can move data via download from [ICBHI dataset](https://paperswithcode.com/dataset/icbhi-respiratory-sound-database), and generated from our pretrained Diffwave.
+
+unzip the ```icbhi_dataset.zip``` into `./data/`.
 
 For the real training samples, move into
-```
-./data/real/
-```
-
-For the Mixed500, move into
-```
-./data/generated_from_1msteps/mixed500/
-```
-
-For the Mixed2k, move into
-```
-./data/generated_from_1msteps/mixed2k/
-```
 
 
-### Test samples
-Move all the test sets (event-level) into 
-```
-./data/test/real/
-```
+
+<pre>
+data/training
+├── real
+│    ├── (4,142 samples)
+│    ├── ...
+│    ├── ...
+│    └── 226_1b1_Pl_sc_LittC2SE_event_9_label_1.wav
+│
+├── generated_from_1msteps
+│   ├── mixed500
+│    |   ├── class0
+│    |    |    └── (500 samples of class0)
+│    |   ├── class1
+│    |    |    └── (500 samples of class1)
+│    |   ├── class2
+│    |    |    └── (500 samples of class2)
+│    |   ├── class3
+│    |    |    └── (500 samples of class3)
+│   ├── mixed2k
+│    |   ├── class0
+│    |    |    └── (2,000 samples of class0)
+│    |   ├── class1
+│    |    |    └── (2,000 samples of class1)
+│    |   ├── class2
+│    |    |    └── (2,000 samples of class2)
+│    |   ├── class3
+│    |    |    └── (2,000 samples of class3)
+</pre>
+
+<pre>
+data/test
+├──test sample1
+├──test sample2
+├──...
+├──test sample2,756
+</pre>
 
 ## Run
 
@@ -64,4 +85,7 @@ $ ./scripts/icbhi_aft_1msteps_500_mixed.sh
 ## Evaluation
 
 ### Pretrained AFT weights
-We will provide the AFT pretrained on Mixed500, which has the performance of around 62 Score in the final version
+We will provide the AFT pretrained on Mixed500, which has the performance of around 62 Score.
+
+https://drive.google.com/file/d/15Vfy9RAaAZZTiOEI1mn92qcqE-wn7mm2/view?usp=sharing
+
