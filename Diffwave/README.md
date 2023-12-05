@@ -38,7 +38,7 @@ If you want to train with a single GPU, please change ```CUDA_VISIBLE_DEVICES=0`
 
 
 ### Model
-The pretrained weights used in our paper can be downloaded as below:
+The pretrained weights (```weights.pt```) used in our paper can be downloaded as below:
 
 https://drive.google.com/file/d/1Y2xxZTOmMHCkvEGPDyD2kBkbjQy7YWJb/view?usp=sharing
 
@@ -58,29 +58,32 @@ python inference.py [YOUR_MODEL_PATH] --spectrogram_path [Spectrograms_PATH]
 # [Spectrograms_PATH] directory should contain the preprocessed spectorgrams you want to synthesize 
 ```
 
-Or, if you have followed our guidelines (moved to weights.pt into ./save/1msteps_icbhi_Diffwave/), you can use our script files.
+Or, if you have followed our guidelines (moved to ```weights.pt``` into ```./save/1msteps_icbhi_Diffwave/```), you can use our script files.
 
-If you want to generate the samples in a specific folder (here, ./samples/test_set_samples/), do
+If you want to generate the samples in a specific folder (here, ```./samples/test_set_samples/```), do
 ```
 sh ./scripts/eval_1msteps_for_generate_direct.sh
 ```
 
 You can obtain the generated 10 samples of the ICBHI test set (event level) in the ``` ./samples/generated_test_samples/save/1msteps_icbhi_Diffwave_seed=0/```
 
-If you want to generate 2,000 samples from label3's test data, do
+If you want to generate 2,000 samples from label3 (both) test data, do
 ```
 sh ./scripts/eval_1msteps_for_generate_label3.sh
 ```
 
-If you want to generate 10,000 samples from label2's test data, you can modify the ```iter_for_generate=10000``` of the  ```./scripts/eval_1msteps_for_generate_label2.sh``` file.
+If you want to generate 10,000 samples from label2 (wheeze) test data, you can modify the ```iter_for_generate=10000``` of the  ```./scripts/eval_1msteps_for_generate_label2.sh``` file.
 
 In script files, you can modify the hyperparameters.
 
 ```iter_for_generate```: how many samples do you want to generate
 
 
-
-
-
 ### References
 - [DiffWave: A Versatile Diffusion Model for Audio Synthesis](https://arxiv.org/pdf/2009.09761.pdf)
+- [Adversarial Fine-tuning using Generated Respiratory Sound to Address Class Imbalance](https://arxiv.org/abs/2311.06480)
+
+
+
+## Contact
+- June-Woo Kim: kaen2891@knu.ac.kr
