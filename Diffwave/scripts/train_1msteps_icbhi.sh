@@ -5,7 +5,7 @@ for s in $SEED
 do
     for m in $MODEL
     do
-        CUDA_VISIBLE_DEVICES=2,3 python main.py --dataset  icbhi \
+        CUDA_VISIBLE_DEVICES=0,1 python main.py --dataset icbhi \
                                         --seed $s \
                                         --data_dirs ./dataset \
                                         --batch_size 16 \
