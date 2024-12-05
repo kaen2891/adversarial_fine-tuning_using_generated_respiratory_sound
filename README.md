@@ -1,4 +1,5 @@
 # Adversarial Fine-tuning using Generated Respiratory Sound to Address Class Imbalance
+[arXiv](https://arxiv.org/abs/2311.06480) | [Conference](https://openreview.net/forum?id=z1AVG5LDQ7) | [BibTeX](#bibtex)
 
 ## Notion
 To train or evalutate the audio diffusion model, please see ```Diffwave/``` folder.
@@ -314,4 +315,4 @@ If you find this repo useful for your research, please consider citing our paper
 ```
 
 ## Contact
-- June-Woo Kim: kaen2891@knu.ac.kr
+- June-Woo Kim: kaen2891@gmail.com
